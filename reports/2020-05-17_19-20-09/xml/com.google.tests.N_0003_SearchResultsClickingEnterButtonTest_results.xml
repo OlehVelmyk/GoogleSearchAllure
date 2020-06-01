@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="All-tests [IE11]"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="23.607">
+  <properties />
+  
+  
+            <testcase name="searchResultsClickingEnterButton" time="23.607" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" />
+      
+</testsuite>

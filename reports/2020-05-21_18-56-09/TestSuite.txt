@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 253.318 s <<< FAILURE! - in TestSuite
+com.google.tests.N_0005_CountSearchResultTest.countSearchResult  Time elapsed: 0.634 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+The command failed because the specified element reference is stale.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-S5NFJF9', ip: '192.168.31.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 44.18362.449.0, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: D9BBD282-CF99-4C47-A0A9-1370F743868B
+	at com.google.tests.N_0005_CountSearchResultTest.countSearchResult(N_0005_CountSearchResultTest.java:17)
+

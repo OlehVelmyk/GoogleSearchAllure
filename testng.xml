@@ -1,0 +1,45 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="tests" thread-count="5">
+    <listeners>
+        <listener class-name="com.google.logging.TestStatuses"></listener>
+    </listeners>
+
+    <test name="All-tests [Firefox]">
+        <parameter name="browser" value="firefox"/>
+        <packages>
+            <package name="com.google.tests"></package>
+        </packages>
+    </test>
+
+    <test name="All-tests [Opera]">
+        <parameter name="browser" value="opera"/>
+        <packages>
+            <package name="com.google.tests"></package>
+        </packages>
+    </test>
+
+    <test name="All-tests [Chrome]">
+        <parameter name="browser" value="chrome"/>
+        <packages>
+            <package name="com.google.tests"></package>
+        </packages>
+    </test>
+
+    <test name="All-tests [Edge]">
+        <parameter name="browser" value="edge"/>
+        <packages>
+            <package name="com.google.tests"></package>
+        </packages>
+    </test>
+
+    <test name="All-tests [IE11]">
+        <parameter name="browser" value="ie"/>
+        <classes>
+            <class name="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest"/>
+            <class name="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest"/>
+            <class name="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest"/>
+            <class name="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest"/>
+        </classes>
+    </test>
+</suite>

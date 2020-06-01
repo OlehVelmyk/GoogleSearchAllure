@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="280.696" tests="24" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="13"/>
+    <property name="webdriver.chrome.driver" value="D:\QA\MyProjects\com.google\target\test-classes\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\QA\MyProjects\com.google\target\test-classes;D:\QA\MyProjects\com.google\target\classes;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\olegn\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\olegn\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\olegn\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\olegn\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\olegn\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\olegn\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\olegn\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\olegn\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\olegn\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\olegn\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\olegn\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\olegn\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\olegn\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\olegn\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\olegn\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\olegn\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\olegn\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\olegn\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\olegn\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\olegn\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\olegn\.m2\repository\com\google\inject\guice\4.2.3\guice-4.2.3.jar;C:\Users\olegn\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\olegn\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-settings\2.2.1\maven-settings-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-model\2.2.1\maven-model-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-repository-metadata\2.2.1\maven-repository-metadata-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\olegn\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\olegn\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.11\plexus-interpolation-1.11.jar;C:\Users\olegn\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.15\plexus-utils-1.5.15.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-artifact\2.2.1\maven-artifact-2.2.1.jar;C:\Users\olegn\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\olegn\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\olegn\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;"/>
+    <property name="org.uncommons.reportng.escape-output" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="webdriver.ie.driver" value="D:\QA\MyProjects\com.google\target\test-classes\IEDriverServer.exe"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="13"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\java\java-13\jdk-13\jdk-13.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\olegn\AppData\Local\Temp\surefire7991611908718157823\surefirebooter13832814769707326550.jar C:\Users\olegn\AppData\Local\Temp\surefire7991611908718157823 2020-05-21T19-15-09_848-jvmRun1 surefire2797058302468840532tmp surefire_011781637039972789035tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\QA\MyProjects\com.google\target\test-classes;D:\QA\MyProjects\com.google\target\classes;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\olegn\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\olegn\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\olegn\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\olegn\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\olegn\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\olegn\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\olegn\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\olegn\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\olegn\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\olegn\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\olegn\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\olegn\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\olegn\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\olegn\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\olegn\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\olegn\.m2\repository\org\uncommons\reportng\1.1.4\reportng-1.1.4.jar;C:\Users\olegn\.m2\repository\velocity\velocity\1.4\velocity-1.4.jar;C:\Users\olegn\.m2\repository\velocity\velocity-dep\1.4\velocity-dep-1.4.jar;C:\Users\olegn\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\olegn\.m2\repository\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar;C:\Users\olegn\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar;C:\Users\olegn\.m2\repository\com\google\inject\guice\4.2.3\guice-4.2.3.jar;C:\Users\olegn\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\olegn\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-project\2.2.1\maven-project-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-settings\2.2.1\maven-settings-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-profile\2.2.1\maven-profile-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-model\2.2.1\maven-model-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-artifact-manager\2.2.1\maven-artifact-manager-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-repository-metadata\2.2.1\maven-repository-metadata-2.2.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\wagon\wagon-provider-api\1.0-beta-6\wagon-provider-api-1.0-beta-6.jar;C:\Users\olegn\.m2\repository\backport-util-concurrent\backport-util-concurrent\3.1\backport-util-concurrent-3.1.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-plugin-registry\2.2.1\maven-plugin-registry-2.2.1.jar;C:\Users\olegn\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.11\plexus-interpolation-1.11.jar;C:\Users\olegn\.m2\repository\org\codehaus\plexus\plexus-utils\1.5.15\plexus-utils-1.5.15.jar;C:\Users\olegn\.m2\repository\org\apache\maven\maven-artifact\2.2.1\maven-artifact-2.2.1.jar;C:\Users\olegn\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-9-stable-1\plexus-container-default-1.0-alpha-9-stable-1.jar;C:\Users\olegn\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\olegn\.m2\repository\classworlds\classworlds\1.1-alpha-2\classworlds-1.1-alpha-2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\olegn"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-01-14"/>
+    <property name="java.home" value="C:\java\java-13\jdk-13\jdk-13.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\QA\MyProjects\com.google"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="webdriver.msedge.driver" value="D:\QA\MyProjects\com.google\target\test-classes\msedgedriver.exe"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\olegn\AppData\Local\Temp\surefire7991611908718157823\surefirebooter13832814769707326550.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="13.0.2+8"/>
+    <property name="user.name" value="olegn"/>
+    <property name="path.separator" value=";"/>
+    <property name="webdriver.opera.driver" value="D:\QA\MyProjects\com.google\target\test-classes\operadriver.exe"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\olegn\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\olegn\AppData\Local\Temp\"/>
+    <property name="java.version" value="13.0.2"/>
+    <property name="user.dir" value="D:\QA\MyProjects\com.google"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="webdriver.gecko.driver" value="D:\QA\MyProjects\com.google\target\test-classes\geckodriver.exe"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\java\java-13\jdk-13\jdk-13.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\java\java-13\jdk-13\jdk-13.0.2\bin;C:\apache-maven-3.6.3\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\olegn\AppData\Local\Microsoft\WindowsApps;%DASHLANE_DLL_DIR%;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="13.0.2+8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="57.0"/>
+  </properties>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="6.913"/>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="8.146"/>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="8.157"/>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="1.005"/>
+  <testcase name="searchResultsClickingSearchButtonUnderSearchField" classname="com.google.tests.N_0001_SearchResultsClickingSearchButtonUnderSearchFieldTest" time="3.203"/>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="2.841"/>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="12.981"/>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="0.047"/>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="1.128"/>
+  <testcase name="searchResultsClickingSearchButtonOnDropDownMenu" classname="com.google.tests.N_0002_SearchResultsClickingSearchButtonOnDropDownMenuTest" time="2.296"/>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="0.025"/>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="10.167"/>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="18.543"/>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="1.302"/>
+  <testcase name="searchResultsClickingEnterButton" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" time="0.171"/>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="2.487"/>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="2.366"/>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="0.43"/>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="0.309"/>
+  <testcase name="clickSearchButtonWhenSearchFieldIsEmpty" classname="com.google.tests.N_0004_ClickSearchButtonWhenSearchFieldIsEmptyTest" time="4.798"/>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="76.983">
+    <failure message="expected [190] but found [191]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [190] but found [191]
+	at com.google.tests.N_0005_CountSearchResultTest.countSearchResult(N_0005_CountSearchResultTest.java:17)
+]]></failure>
+    <system-out><![CDATA[Before navigating to: 'https://www.google.com/'
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> name: q]
+Changed element: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> name: q]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Changed element: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> name: q]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Before navigating to: 'https://www.google.com/'
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> name: q]
+Changed element: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> name: q]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Before navigating to: 'https://www.google.com/'
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Navigated to:'https://www.google.com/'
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> name: q]
+Changed element: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> name: q]
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Trying to find Element By : By.name: q
+Found Element By : By.name: q
+Change value: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> name: q]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Changed element: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> name: q]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Clicked on: [[EdgeDriver: MicrosoftEdge on WINDOWS (BE579707-DE24-45F5-9D93-CEDF1F1B6D89)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Clicked on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[FirefoxDriver: firefox on WINDOWS (8657900b-1035-43d1-bcfc-d9bb5388db83)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Clicked on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #rso>div
+Found Element By : By.cssSelector: #rso>div
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[OperaDriver: opera on WINDOWS (3628df3bf091bbee5f18f0d003f93ada)] -> css selector: #pnnext > span:nth-child(2)]
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to find Element By : By.id: ofr
+Found Element By : By.id: ofr
+Trying to find Element By : By.id: ofr
+Trying to find Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Found Element By : By.cssSelector: #pnnext > span:nth-child(2)
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (06623ccc891028681e9f94b5b28fa16a)] -> css selector: #pnnext > span:nth-child(2)]
+Found Element By : By.id: ofr
+]]></system-out>
+    <system-err><![CDATA[1590077860366	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1590077860367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1590077860367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1590077860367	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+[1590077861.010][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077861.133][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077861.422][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077861.642][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077861.837][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077863.806][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077864.158][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077864.649][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077865.078][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077865.313][SEVERE]: Timed out receiving message from renderer: 0.100
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+[1590077865.772][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077866.483][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077867.914][SEVERE]: Timed out receiving message from renderer: 0.100
+1590077869415	Marionette	INFO	Listening on port 55565
+1590077869855	Marionette	WARN	TLS certificate errors will be ignored for this session
+May 21, 2020 7:17:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 21, 2020 7:17:52 PM org.openqa.selenium.os.OsProcess destroy
+SEVERE: Unable to kill process Process[pid=1072, exitValue=1]
+Starting OperaDriver 80.0.3987.100 (3f00c26d457663a424865bbef1179f72eec1b9fe-refs/branch-heads/3987@{#864}) on port 1748
+Only local connections are allowed.
+Please protect ports used by OperaDriver and related test frameworks to prevent access by malicious code.
+[1590077876.215][WARNING]: This version of OperaDriver has not been tested with Opera version 81.
+May 21, 2020 7:17:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+[1590077880.023][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.239][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.351][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.464][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.506][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.574][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.696][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.820][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.914][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077880.971][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.136][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.347][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.348][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.573][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.742][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.744][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.896][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077881.953][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.021][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.058][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.122][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.161][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.226][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.263][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.328][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.371][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.430][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.492][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.544][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.597][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.679][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.733][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.891][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077882.945][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.008][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.105][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.115][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.244][SEVERE]: T[1590077883.245][SEVERE]: Timed out receiving message from renderer: 0.100
+imed out receiving message from renderer: 0.100
+[1590077883.357][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.361][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.513][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.705][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077883.913][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077884.180][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077884.530][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077884.707][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077884.826][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077884.947][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077885.074][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077885.191][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077885.361][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077885.584][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077885.848][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077885.986][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077888.107][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077888.376][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077888.549][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077888.921][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077889.187][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077889.423][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077889.682][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077891.502][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077891.768][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077891.974][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077898.261][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077899.589][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077899.874][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077899.998][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077900.138][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077900.475][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077901.016][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077905.233][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077905.394][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077905.668][SEVERE]: Timed out receiving message f[1590077905.673][SEVERE]: Timed out receiving message from renderer: 0.100
+rom renderer: 0.100
+[1590077906.037][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077906.164][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077906.337][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077910.203][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077910.667][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077910.818][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077910.969][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077911.235][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077911.567][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077915.541][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077915.907][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077916.067][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077916.197][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077916.627][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077917.003][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077921.635][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077921.750][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077922.285][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077923.716][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077923.968][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077924.307][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077927.015][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077927.128][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077927.542][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077927.799][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077929.645][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077929.808][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077930.092][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077930.310][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077931.778][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077932.049][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077932.321][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077935.263][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077935.716][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077936.034][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077936.180][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077937.249][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077940.882][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077940.886][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077940.997][SEVE[1590077940.997][SEVERE]: Timed out receiving message from renderer: 0.100
+RE]: Timed out receiving message from renderer: 0.100
+[1590077941.152][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077941.505][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077941.746][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077944.745][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077944.869][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077945.271][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077945.555][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077945.608][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077945.676][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077945.925][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077946.202][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077946.390][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077946.940][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077948.694][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077948.797][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077948.912][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077949.093][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077950.850][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077950.959][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077951.243][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077951.397][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077954.165][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077954.281][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077954.425][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077954.701][SEVERE]: Timed out receiving message from renderer: 0.100
+[1590077954.899][SEVERE]: Timed out receiving message from renderer: 0.100
+]]></system-err>
+  </testcase>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="92.567"/>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="95.248"/>
+  <testcase name="countSearchResult" classname="com.google.tests.N_0005_CountSearchResultTest" time="107.343"/>
+</testsuite>

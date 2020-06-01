@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="All-tests [Firefox]"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="119.127">
+  <properties />
+  
+  
+            <testcase name="countSearchResult" time="119.127" classname="com.google.tests.N_0005_CountSearchResultTest" />
+      
+</testsuite>

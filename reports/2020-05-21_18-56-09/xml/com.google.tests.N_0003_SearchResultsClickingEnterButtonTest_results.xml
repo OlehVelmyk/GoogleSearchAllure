@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="All-tests [Chrome]"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="9.102">
+  <properties />
+  
+  
+            <testcase name="searchResultsClickingEnterButton" time="9.102" classname="com.google.tests.N_0003_SearchResultsClickingEnterButtonTest" />
+      
+</testsuite>

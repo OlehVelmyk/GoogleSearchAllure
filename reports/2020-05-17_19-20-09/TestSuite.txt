@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 286.221 s <<< FAILURE! - in TestSuite
+com.google.tests.N_0005_CountSearchResultTest.countSearchResult  Time elapsed: 6.451 s  <<< FAILURE!
+java.lang.AssertionError: expected [190] but found [191]
+	at com.google.tests.N_0005_CountSearchResultTest.countSearchResult(N_0005_CountSearchResultTest.java:17)
+
