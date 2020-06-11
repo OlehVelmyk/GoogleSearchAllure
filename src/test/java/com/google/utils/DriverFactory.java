@@ -39,28 +39,29 @@ public class DriverFactory {
                 case "firefox":
                     System.setProperty(
                             "webdriver.gecko.driver",
-                            new File(DriverFactory.class.getResource("/geckodriver.exe").getFile()).getPath().replaceAll("\\\\", "/"));
+                            new File(DriverFactory.class.getResource("/geckodriver.exe").getFile()).getPath().replaceAll("\\\\", "//"));
                     return new FirefoxDriver();
                 case "opera":
                     System.setProperty(
                             "webdriver.opera.driver",
-                            new File(DriverFactory.class.getResource("/operadriver.exe").getFile()).getPath().replaceAll("\\\\", "/"));
+                            new File(DriverFactory.class.getResource("/operadriver.exe").getFile()).getPath().replaceAll("\\\\", "//"));
                     return new OperaDriver();
                 case "chrome":
                     System.setProperty(
                             "webdriver.chrome.driver",
-                            new File(DriverFactory.class.getResource("/chromedriver.exe").getFile()).getPath().replaceAll("\\\\", "/"));
+                            new File(DriverFactory.class.getResource("/chromedriver.exe").getFile()).getPath().replaceAll("\\\\", "//"));
+                    System.out.println(new File(DriverFactory.class.getResource("/chromedriver.exe").getFile()).getPath().replaceAll("\\\\", "/"));
                     return new ChromeDriver();
                 case "edge":
                     System.setProperty(
                             "webdriver.msedge.driver",
-                            new File(DriverFactory.class.getResource("/msedgedriver.exe").getFile()).getPath().replaceAll("\\\\", "/"));
+                            new File(DriverFactory.class.getResource("/msedgedriver.exe").getFile()).getPath().replaceAll("\\\\", "//"));
                     return new EdgeDriver();
                 case "ie":
                 case "internet explorer":
                     System.setProperty(
                             "webdriver.ie.driver",
-                            new File(DriverFactory.class.getResource("/IEDriverServer.exe").getFile()).getPath().replaceAll("\\\\", "/"));
+                            new File(DriverFactory.class.getResource("/IEDriverServer.exe").getFile()).getPath().replaceAll("\\\\", "//"));
                     InternetExplorerOptions ieOptions = new InternetExplorerOptions()
                             //.destructivelyEnsureCleanSession()
                             .setUnhandledPromptBehaviour(UnexpectedAlertBehaviour.ACCEPT)
