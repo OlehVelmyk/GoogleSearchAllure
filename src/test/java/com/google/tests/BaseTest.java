@@ -39,7 +39,6 @@ public abstract class BaseTest {
         driver.register(new EventHandler());
         setBrowserType(browser);
 
-
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(60, TimeUnit.SECONDS);
