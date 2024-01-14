@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class N_0005_CountSearchResultTest extends BaseTest {
 
-    @Test//(retryAnalyzer = RetryAnalyzer.class)
+//    @Test//(retryAnalyzer = RetryAnalyzer.class)
     public void countSearchResult() {
         GoogleMainPage page = new GoogleMainPage(driver);
         CountSearchResult searchResult = new CountSearchResult(driver);

@@ -5,6 +5,7 @@ import com.google.logging.CustomReporter;
 import com.google.pages.BasePage;
 import com.google.pages.GoogleSearchResultPage;
 import com.google.utils.DataConverter;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -31,26 +32,38 @@ public class CountSearchResult extends BasePage {
     }
 
     public int countSearchResult() {
-        int generalCount = countSearchResultOnOnePage();
-        while (resultPage.nextButtonIsPresent()) {
-            resultPage.clickNextButton();
-            generalCount += countSearchResultOnOnePage();
-        }
-        CustomReporter.logCheckCount("COUNT SEARCH ACTUAL RESULT = " + generalCount);
-        return generalCount;
-    }
-
-    public int countSearchResultOnOnePage() {
         String text;
         int count = 0;
-        List<WebElement> list = actionGetList(resultPage.getSearchBlock(), 10);
+
+        ScrollSearchPageToBottom();
+
+        List<WebElement> list = actionGetList(resultPage.getSearchBlock(), timeoutCommon);
         for (int i = 0; i < list.size(); i++) {
             text = list.get(i).getText();
-            if (text.toLowerCase().contains(EnteredValues.value)) {
+            if (text.contains(EnteredValues.value)) {
                 count += 1;
             }
         }
-        CustomReporter.logCheckCount("COUNT SEARCH ACTUAL RESULT ON ONE PAGE = " + count);
+        CustomReporter.logCheckCount("COUNT SEARCH ACTUAL RESULT = " + count);
         return count;
+    }
+
+    private void ScrollSearchPageToBottom() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        boolean reachedBottom = false;
+        long lastHeight = (long) (js.executeScript("return document.body.scrollHeight"));
+        while (!reachedBottom) {
+            js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+            sleep(2000);
+            long newHeight = (long) (js.executeScript("return document.body.scrollHeight"));
+            if (newHeight == lastHeight) {
+                if(!resultPage.bottomTextBlockIsPresent()) {
+                    resultPage.clickMoreResultsButton();
+                }else {
+                    reachedBottom = true;
+                }
+            }
+            lastHeight = newHeight;
+        }
     }
 }
