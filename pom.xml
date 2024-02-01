@@ -104,7 +104,7 @@
                     <systemProperties>
                         <property>
                             <name>allure.results.directory</name>
-                            <value>${sureFireDir}/allure-results</value>
+                            <value>${sureFireDir}/allure/allure-results</value>
                         </property>
                     </systemProperties>
                     <suiteXmlFiles>
