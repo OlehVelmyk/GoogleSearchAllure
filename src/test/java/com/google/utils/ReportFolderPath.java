@@ -13,7 +13,7 @@ public class ReportFolderPath {
             prop.load(resourceAsStream);
             String reportFolder = prop.getProperty("sureFireDir");
             String dateFolder = prop.getProperty("build.time");
-            return reportFolder + dateFolder + "/" + "screenshots" + "/";
+            return reportFolder  + "screenshots" + "/" + dateFolder + "/";
         } catch (IOException e) {
             System.out.println("Failed to capture screenshot: " + e.getMessage());
         }

@@ -1,10 +1,10 @@
 package com.google.actionHelpers;
 
 import com.google.dataProvider.EnteredValues;
-import com.google.logging.CustomReporter;
 import com.google.pages.BasePage;
 import com.google.pages.GoogleSearchResultPage;
 import com.google.utils.DataConverter;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,7 +27,7 @@ public class CountSearchResult extends BasePage {
     public int getResultCounter() {
         int expectedResult = Integer.parseInt(DataConverter.parseTextValue(resultPage.getTextWithResultCounter(),
                 "\\d+"));
-        CustomReporter.logCheckCount("COUNT SEARCH EXPECTED RESULT = " + expectedResult);
+        Allure.step("COUNT SEARCH EXPECTED RESULT = " + expectedResult);
         return expectedResult;
     }
 
@@ -44,7 +44,7 @@ public class CountSearchResult extends BasePage {
                 count += 1;
             }
         }
-        CustomReporter.logCheckCount("COUNT SEARCH ACTUAL RESULT = " + count);
+        Allure.step("COUNT SEARCH ACTUAL RESULT = " + count);
         return count;
     }
 

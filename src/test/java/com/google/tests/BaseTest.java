@@ -1,21 +1,25 @@
 package com.google.tests;
 
-import com.google.logging.CustomReporter;
-import com.google.logging.EventHandler;
+
 import com.google.utils.DataConverter;
+import io.qameta.allure.Allure;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import static com.google.actionHelpers.TakeScreenshot.takeScreenshot;
 import static com.google.utils.DriverFactory.initDriver;
 
 
 //@Listeners({TestStatuses.class})
 public abstract class BaseTest {
-    protected EventFiringWebDriver driver;
+    protected WebDriver driver;
     private String baseUrl = "https://www.google.com/";
     private String browserType;
 
@@ -35,8 +39,7 @@ public abstract class BaseTest {
     @BeforeClass
     @Parameters("browser")
     public void setUpDriver(@Optional("chrome") String browser) {
-        driver = new EventFiringWebDriver(initDriver(browser));
-        driver.register(new EventHandler());
+        driver = initDriver(browser);
         setBrowserType(browser);
 
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -53,7 +56,7 @@ public abstract class BaseTest {
     }
 
     protected void goToPage() {
-        CustomReporter.logAction("GO TO " + baseUrl);
+        Allure.step("GO TO " + baseUrl);
         driver.get(baseUrl);
         if (!getBrowserType().equalsIgnoreCase("ie")) {
             Assert.assertEquals(driver.getCurrentUrl(), baseUrl);
@@ -63,12 +66,17 @@ public abstract class BaseTest {
         }
     }
 
-    /*@AfterMethod
-    public void onTestFailure(ITestResult iTestResult) {
-        if (!iTestResult.isSuccess()) {
-        Reporter.setCurrentTestResult(iTestResult);
-        File file = TakeAndAddScreenshotToReport.takeScreenshot(iTestResult.getInstanceName(), driver, browserType);
-        TakeAndAddScreenshotToReport.addScreenshotToReportFile(file);
+    protected  void updateTestCaseName(String testName){
+        Allure.getLifecycle().updateTestCase(result -> {
+            result.setName(testName);
+        });
+    }
+
+//    @AfterMethod
+    public void onTestFailure(ITestResult iTestResult) throws IOException {
+        if (iTestResult.getStatus() == ITestResult.FAILURE) {
+            File screenshot = takeScreenshot(iTestResult.getInstanceName(), driver, browserType);
+            Allure.addAttachment("Page Screenshot", FileUtils.openInputStream(screenshot));
         }
-    }*/
+    }
 }

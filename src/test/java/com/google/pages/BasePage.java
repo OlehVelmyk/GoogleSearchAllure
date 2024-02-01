@@ -1,6 +1,6 @@
 package com.google.pages;
 
-import com.google.logging.CustomReporter;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -38,25 +38,25 @@ public abstract class BasePage {
     }
 
     public void actionClickElement(String logAction, By locator, Duration timeout) {
-        CustomReporter.logAction(logAction);
+        Allure.step(logAction);
         waitForClickable(locator, timeout);
         driver.findElement(locator).click();
     }
 
     public void actionFillField(String logAction, By locator, String inputValue, Duration timeout) {
-        CustomReporter.logAction(logAction);
+        Allure.step(logAction);
         waitForClickable(locator, timeout);
         driver.findElement(locator).sendKeys(inputValue);
     }
 
     public void actionFillField(String logAction, By locator, Keys buttonName, Duration timeout) {
-        CustomReporter.logAction(logAction);
+        Allure.step(logAction);
         waitForClickable(locator, timeout);
         driver.findElement(locator).sendKeys(buttonName);
     }
 
     public boolean elementIsPresent(String logAction, By locator) {
-        CustomReporter.log(logAction);
+        Allure.step(logAction);
         return !driver.findElements(locator).isEmpty();
     }
 
